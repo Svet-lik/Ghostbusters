@@ -1,6 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Roboto' sans-serif;
+    font-family: "Roboto" sans-serif;
     font-weight: 300;
+    color: #363636;
 }
 
 .header {
@@ -9,25 +14,25 @@ body {
     justify-content: space-between;
     padding-left: 34px;
     height: 104px;
-    border-bottom: 1px solid #D4D4D4;
+    border-bottom: 1px solid #d4d4d4;
 }
 
 .search-input {
-    background: url('../img/search-icon.svg') no-repeat center left;
+    background: url("../img/search-icon.svg") no-repeat center left;
     padding-left: 38px;
     font-style: normal;
     font-weight: normal;
     border: none;
     font-size: 18px;
     line-height: 21px;
-    color: #A5A5A5;
+    color: #a5a5a5;
     margin-left: 34px;
 }
 
 .line {
     height: 100%;
     width: 1px;
-    background-color: #A5A5A5;
+    background-color: #a5a5a5;
     margin-left: 34px;
 }
 
@@ -45,6 +50,7 @@ body {
 }
 
 .button-group {
+    display: flex;
     height: 100%;
 }
 
@@ -57,14 +63,197 @@ body {
 }
 
 .sign-up {
-    color: #5671F6;
+    color: #5671f6;
     background-color: #fff;
     padding: 0 34px;
-    border-left: 1px solid #D4D4D4;
+    border-left: 1px solid #d4d4d4;
 }
 
 .login {
-    color: #FFFFFF;
-    background-color: #5671F6;
+    color: #ffffff;
+    background-color: #5671f6;
     padding: 0 50px;
+}
+
+.container {
+    max-width: 1130px;
+    margin: auto;
+}
+
+.film {
+    padding: 80px 0;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.film-wrapper {
+    display: flex;
+}
+
+.film-trailer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+.poster {
+    border-radius: 5px 5px 0 0;
+    width: 358px;
+}
+
+.trailer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #d4d4d4;
+    border-radius: 0 0 5px 5px;
+    padding: 25px 0;
+    cursor: pointer;
+}
+
+.trailer-button-icon {
+    margin-right: 14px;
+}
+
+.film-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.film-subtitle {
+    display: block;
+    margin: 16px 0 32px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #a5a5a5;
+}
+
+.film-description {
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000000;
+    max-width: 514px;
+}
+
+.about-film {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.left-side {
+    margin-right: 40px;
+}
+
+.about-text {
+    display: block;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 16px;
+}
+
+.about-text-bold {
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.film-rating-counter {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #5671f6;
+    border-radius: 10px;
+    margin-right: 28px;
+}
+
+.rating-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.rating-text {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.rating-text-bold {
+    font-weight: bold;
+}
+
+.cast {
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #a5a5a5;
+    margin-right: 30px;
+}
+
+.section-title.active {
+    color: #363636;
+    font-weight: 900;
+}
+
+.tabs-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-basis: 25%;
+    margin-bottom: 35px;
+}
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5671F6;
+    margin: 0 0 6px;
+}
+
+.en-name {
+    font-size: 16px;
+    line-height: 19px;
+    color: #A5A5A5;
 }
